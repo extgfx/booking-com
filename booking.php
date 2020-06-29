@@ -56,7 +56,7 @@ function bocom($val,$password,$n){
         }
         if ($saveWishList->data->gta_add_three_items_campaign_status->status == 'reward_given_wallet') {
             $newfile = fopen("akun.txt", "a");
-                fwrite($newfile, $email.";".$password."\n");
+                fwrite($newfile, $email.":".$password."\n");
                 fclose($newfile);
                 echo "$okegreen**$white Sukses\n";
                 echo "$okegreen**$white Email : $email\n";
